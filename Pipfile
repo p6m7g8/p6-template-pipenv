@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+docopt = "*"
+
+[dev-packages]
+autopep8 = "*"
+black = "*"
+flake9 = "*"
+jedi = "*"
+pep8 = "*"
+pydantic = "*"
+pylint = "*"
+pyre-check = "*"
+
+[requires]
+python_version = "3.12"
