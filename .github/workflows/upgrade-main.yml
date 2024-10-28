@@ -14,8 +14,15 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
+      - name: Setup Python
+        uses: actions/setup-python@v5.3.0
+        with:
+          python-version: '3.x'
       - name: Install dependencies
-        run: pipenv install
+        run: |
+          pip install --upgrade pip
+          pip install pipenv
+          pipenv install
       - name: Update Deps
         run: |
           pipenv update
