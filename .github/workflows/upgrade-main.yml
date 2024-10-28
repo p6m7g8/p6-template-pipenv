@@ -1,0 +1,22 @@
+name: upgrade-main
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: 0 12 * * *
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Install dependencies
+        run: pipenv install
+      - name: Update Deps
+        run: |
+	  pipenv update
+          git diff
