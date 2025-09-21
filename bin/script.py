@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+"""A script with command-line argument parsing and logging setup."""
+
 import logging
 import sys
 
@@ -16,7 +18,7 @@ Options:
 
 def setup_logging(debug: bool, verbose: bool) -> None:
     """
-    Sets up logging based on the debug and verbose flags.
+    Set up logging based on the debug and verbose flags.
 
     Args:
         debug (bool): Enable debug logging if True.
@@ -32,9 +34,10 @@ def setup_logging(debug: bool, verbose: bool) -> None:
 
 def main(args) -> int:
     """
-    Main function
+    Run the main function with command-line arguments.
 
     Args:
+        args (dict): Command-line arguments parsed by docopt.
     """
     debug: bool = bool(args["--debug"])
     verbose: bool = bool(args["--verbose"])

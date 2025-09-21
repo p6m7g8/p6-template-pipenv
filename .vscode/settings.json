@@ -33,35 +33,6 @@
     // 🔧 testing
     "python.testing.pytestEnabled": true,
     // 🔧 spelling
-    "cSpell.words": [
-        "Aenv",
-        "Aflag",
-        "auditlog",
-        "auditlogs",
-        "codespell",
-        "docktor",
-        "ENVCOMPANIES",
-        "envcompany",
-        "Fdefault",
-        "fieldtrial",
-        "flagview",
-        "htmlcov",
-        "inuse",
-        "ldclient",
-        "lifecycles",
-        "noninuse",
-        "notactive",
-        "notdifferent",
-        "notinusecompanies",
-        "pipfile",
-        "pycache",
-        "pydocstyle",
-        "pytests",
-        "serv",
-        "unusedcompanies",
-        "venv",
-        "virtualenv",
-        "virtualenvs"
-    ],
+    "cSpell.words": [],
     "makefile.configureOnOpen": false
 }
