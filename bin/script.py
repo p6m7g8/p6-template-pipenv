@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 import logging
-import os
-import re
 import sys
 
 import docopt
@@ -14,6 +12,7 @@ Options:
     --debug           Enable debug logging.
     --verbose         Enable verbose logging.
 """
+
 
 def setup_logging(debug: bool, verbose: bool) -> None:
     """
@@ -43,6 +42,7 @@ def main(args) -> int:
     setup_logging(debug, verbose)
     return 0
 
+
 if __name__ == "__main__":
-    cli_arguments: Dict = docopt.docopt(__doc__, options_first=True, version="0.0.1")
+    cli_arguments: dict = docopt.docopt(__doc__, options_first=True, version="0.0.1")
     sys.exit(main(cli_arguments))

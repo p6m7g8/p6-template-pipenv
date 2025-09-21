@@ -1,0 +1,6 @@
+.pyre/
+.pytest_cache/
+htmlcov/
+ld_common/__pycache__/
+share/reports/
+tests/__pycache__/
