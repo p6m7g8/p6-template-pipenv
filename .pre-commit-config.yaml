@@ -67,4 +67,11 @@ repos:
         name: codespell
         entry: pipenv run codespell
         language: system
-        args: ["-S share/*", "-x Pipfile.lock"]
+        args: ["-x Pipfile.lock"]
+
+      # --- Tests / runners ---
+      - id: pytest
+        name: pytest
+        entry: pipenv run pytest -v --no-cov
+        language: system
+        pass_filenames: false
