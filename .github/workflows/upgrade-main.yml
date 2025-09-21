@@ -23,9 +23,11 @@ jobs:
           pip install --upgrade pip
           pip install pipenv
           pipenv install
+          pipenv install --dev
       - name: Update Deps
         run: |
           pipenv update
+          pre-commit run --all-files
           git diff
       - name: Create Pull Request
         id: create-pr
